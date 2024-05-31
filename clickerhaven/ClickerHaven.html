@@ -1,0 +1,123 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="ClickerHaven.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Great+Vibes">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="ClickerHavenJS.js"></script>
+        <title> Clicker Haven </title>
+    </head>
+
+    <body>
+        
+        <nav class="navbar">
+            <div class="logo"><h1>Clicker Haven</h1></div>
+            <ul class="menu">
+                <li><a href=""class="active">HOME</a></li>
+                <li><a href="ClickerHavenProducts.html">PRODUCTS</a>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="ClickerHavenContactUs.html">CONTACT US</a></li>
+                <a href="#shopping_cart"><i class="fas fa-shopping-cart" onclick="popup_cart()"></i></a>
+            </ul>
+
+            <div class="menu-btn">
+                <i class="fa fa-bars"></i>
+            </div>
+        </nav>
+
+        <div class="container">
+            <section class="content">
+                <h1>Shop Online</h1>
+                <h2> with us! </h2>
+                <p>Elevate your click game at Clicker Haven! We offer a vast selection of wired and wireless mice to perfectly suit your needs. Browse our collection of ergonomic essentials and other accessories for a comfortable and productive computer experience.</p>
+                <br><br><br>
+                <div class="button-container">
+                    <a href="ClickerHavenProducts.html"><button>Buy Now!</button></a>
+                </div>
+            </section>
+        </div>
+
+        <section class="shopping_cart" id="shopping_cart">
+            <div class="order_container">
+
+                <a href="#" id="close_toggle" onclick="remove_cart()">
+                    <span class="fas fa-window-close"></span>
+                </a>
+
+                <h1 id="shop_title">Shopping Cart</h1>
+                <hr>
+                <table border = "0" id ="item_list"></table>
+                
+                   <p class="total_price"> Total: <span id="total_price"> 0.00 </span></p>
+        
+                <button id="check_out" onclick="go_to_next()">Check Out</button>
+            </div>
+        </section>
+
+       <br><br><br><br><br>
+
+
+       <section class ="about" id = "about">
+            <br><br><br>
+            <h2>About Us</h2>
+            <div class="about-content">
+                <div class="text-content">
+                    <h3>#1 Philippines' Mouse Best Seller</h3>
+                    <p>At Clicker Haven, customer satisfaction is our top priority. Our dedicated team works tirelessly to bring you the latest in technology and the best in customer service. Thank you for choosing us as your trusted source for computer mice. We look forward to serving you!</p>
+                </div>
+                <img src="for-about.png">
+            </div>
+       </section>
+
+
+
+
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-row">
+                    <div class="footer-col">
+                        <h4>Clicker Haven</h4>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Our Services</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Affiliate Program</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Get Help</h4>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Shipping</a></li>
+                            <li><a href="#">Returns</a></li>
+                            <li><a href="#">Order Status</a></li>
+                            <li><a href="#">Payment Options</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Contact Us</h4>
+                        <ul>
+                            <li>Email: support@clickerhaven.com</li>
+                            <li>Phone: (+63) 123-4567</li>
+                            <li>Address: 1234 Mouse St, Tech City, TX 75001</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Follow Us</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2024 Clicker Haven. All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+        
+    </body>
+</html>

@@ -1,0 +1,109 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Great+Vibes">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="ClickerHavenProducts.css">
+        <link rel="stylesheet" href="ClickerHavenContactUs.css">
+        <title>Contact Us</title>
+    </head>
+
+    <body>
+
+        <nav class="navbar">
+            <div class="logo"><h1>Clicker Haven</h1></div>
+            <ul class="menu">
+                <li><a href="ClickerHaven.html">HOME</a></li>
+                <li><a href="ClickerHavenProducts.html">PRODUCTS</a>
+                <li><a href="ClickerHaven.html#about">ABOUT</a></li>
+                <li><a href="" class="active">CONTACT US</a></li>
+                <a href="#shopping_cart"><i class="fas fa-shopping-cart" onclick="popup_cart()"></i></a>
+            </ul>
+
+            <div class="menu-btn">
+                <i class="fa fa-bars"></i>
+            </div>
+        </nav>
+
+        <div class="background-wrapper">
+            <video autoplay muted loop id="background-video">
+                <source src="bgvideo.mp4" type="video/mp4">
+                
+            </video>
+        </div>
+
+        <div class="contact-form">
+            <h1 class="heading"> Have some questions?</h1>
+            <form action="#" method="post">
+                <label for="country">Select a Country:</label>
+                <select id="country" name="country">
+                    <option value="PH">Philippines</option>
+                    <option value="USA">United States</option>
+                    <option value="CAN">Canada</option>
+                    <option value="AUS">Australia</option>
+                </select>
+        
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="eg. Juan Dela Cruz">
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="eg. abc123@gmail.com" required>
+        
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Type your message here:" required></textarea>
+        
+                <input type="submit" value="Send Message">
+            </form>
+        </div>
+
+        <div class="clicker-haven">
+            <label>Clicker</label><span class="green">Haven</span>
+        </div>
+
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-row">
+                    <div class="footer-col">
+                        <h4>Clicker Haven</h4>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Our Services</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Affiliate Program</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Get Help</h4>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Shipping</a></li>
+                            <li><a href="#">Returns</a></li>
+                            <li><a href="#">Order Status</a></li>
+                            <li><a href="#">Payment Options</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Contact Us</h4>
+                        <ul>
+                            <li>Email: support@clickerhaven.com</li>
+                            <li>Phone: (+63) 123-4567</li>
+                            <li>Address: 1234 Mouse St, Tech City, TX 75001</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Follow Us</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2024 Clicker Haven. All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+</html>

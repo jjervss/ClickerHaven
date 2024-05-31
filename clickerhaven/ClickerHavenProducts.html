@@ -1,0 +1,437 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="ClickerHavenProducts.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="ClickerHavenJS.js"></script>
+        <title>Clicker Haven</title>
+    </head>
+
+    <body>
+
+        <nav class="navbar">
+            <div class="logo"><h1>Clicker Haven</h1></div>
+            <ul class="menu">
+                <li><a href="ClickerHaven.html">HOME</a></li>
+                <li><a href="" class="active">PRODUCTS</a>
+                <li><a href="ClickerHaven.html#about">ABOUT</a></li>
+                <li><a href="ClickerHavenContactUs.html">CONTACT US</a></li>
+                <a href="#shopping_cart"><i class="fas fa-shopping-cart" onclick="popup_cart()"></i></a>
+            </ul>
+
+            <div class="menu-btn">
+                <i class="fa fa-bars"></i>
+            </div>
+        </nav>
+
+        <h2 class="pHeading">Our Products</h2>
+
+        <section class="sec">
+
+            <div class="products"> 
+
+                <div class="products">
+                    <div class="card">
+                        <div class="img"><img src="wired_mouse.jpg" alt=""></div>
+                        <div class="desc">Product</div>
+                        <div class="title">Clicker Haven C10 Classics</div>
+                        <div class="box">
+                            <div class="price">₱899.00</div>
+                            <a href="#wired" class="btn" onclick="displayProduct({name: 'Clicker Haven C10 Classics', description: 'Reliable workhorses built to withstand heavy use, ensuring smooth navigation and precision clicking throughout your workday.', image: 'wired_mouse.jpg', price: 899.00})">View</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="img"><img src="wireless_mouse.png" alt=""></div>
+                    <div class="desc">Product</div>
+                    <div class="title">Clicker Haven W7 Freedominators</div>
+                    <div class="box">
+                        <div class="price">₱999.00</div>
+                        <a href="#wireless" class="btn" onclick="displayProduct({name: 'Clicker Haven W7 Freedominators', description: 'Experience unparalleled freedom of movement without compromising on performance, ideal for clutter-free workspaces and seamless transitions between tasks.', image: 'wireless_mouse.png', price: 999.00})">View</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="img"><img src="gaming_mouse.jpg" alt=""></div>
+                    <div class="desc">Product</div>
+                    <div class="title">Clicker Haven G50 Hyperion X</div>
+                    <div class="box">
+                        <div class="price">₱1199.00</div>
+                        <a href="#gaming" class="btn" onclick="displayProduct({name: 'Clicker Haven G50 Hyperion X ', description: 'Unleash your gaming prowess with lightning-fast response times and customizable features, designed to elevate your gameplay to new heights while turning heads with its futuristic design.', image: 'gaming_mouse.jpg', price: 1199.00})">View</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="img"><img src="vertical_mice.jpg" alt=""></div>
+                    <div class="desc">Product</div>
+                    <div class="title">ClickerH V3 Comfort Commanders</div>
+                    <div class="box">
+                        <div class="price">₱1299.00</div>
+                        <a href="#vertical" class="btn" onclick="displayProduct({name: 'ClickerH V3 Comfort Commanders', description: 'Ergonomically designed to reduce strain and enhance comfort, perfect for users who spend long hours at their desks.', image: 'vertical_mice.jpg', price: 1299.00})">View</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="img"><img src="mobile_mice.jpeg" alt=""></div>
+                    <div class="desc">Product</div>
+                    <div class="title">CHaven M2 Mini Mavericks</div>
+                    <div class="box">
+                        <div class="price">₱999.00</div>
+                        <a href="#mobile" class="btn" onclick="displayProduct({name: 'CHaven M2 Mini Mavericks', description: 'Compact and powerful, these mice are designed for on-the-go productivity, fitting comfortably in your pocket or laptop bag.', image: 'mobile_mice.jpg', price: 999.00})">View</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="img"><img src="travel_mice.png" alt=""></div>
+                    <div class="desc">Product</div>
+                    <div class="title">CH T1 Travelers' Choice</div>
+                    <div class="box">
+                        <div class="price">₱899.00</div>
+                        <a href="#travel" class="btn" onclick="displayProduct({name: 'CH T1 Travelers Choice', description: 'Lightweight and portable, these mice are the perfect travel companions, offering reliable performance wherever your journey takes you.', image: 'travel_mice.jpg', price: 899.00})">View</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="img"><img src="presenter_clicker.jpg" alt=""></div>
+                    <div class="desc">Product</div>
+                    <div class="title"> Clicker Haven P9 Pointer Pro</div>
+                    <div class="box">
+                        <div class="price">₱1899.00</div>
+                        <a href="#presenter" class="btn" onclick="displayProduct({name: 'Clicker Haven P9 Pointer Pro', description: 'Elevate your presentations with precision control and easy navigation, ensuring a professional and polished delivery every time.', image: 'presenter_clicker.jpg', price: 1899.00})">View</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="img"><img src="silent_mouse.jpg" alt=""></div>
+                    <div class="desc">Product</div>
+                    <div class="title">Clicker H S7 Stealth Clickers</div>
+                    <div class="box">
+                        <div class="price">₱899.00</div>
+                        <a href="#silent" class="btn" onclick="displayProduct({name: 'Clicker H S7 Stealth Clickers', description: 'Designed for quiet operation, these mice let you work or game without disturbing others, perfect for shared spaces or late-night sessions.', image: 'silent_mouse.jpg', price: 899.00})">View</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="img"><img src="trackball_mouse.jpg" alt=""></div>
+                    <div class="desc">Product</div>
+                    <div class="title">Clicker H TB3 Orbitron 3000</div>
+                    <div class="box">
+                        <div class="price">₱1599.00</div>
+                        <a href="#trackball" class="btn" onclick="displayProduct({name: 'Clicker H TB3 Orbitron 3000', description: 'Achieve pinpoint accuracy with minimal movement using the space-age trackball design, perfect for detailed work and limited desk space.', image: 'trackball_mouse.jpg', price: 1599.00})">View</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="img"><img src="3d_mice.png" alt=""></div>
+                    <div class="desc">Product</div>
+                    <div class="title">CH 3D-X Dimension Architects</div>
+                    <div class="box">
+                        <div class="price">₱1999.00</div>
+                        <a href="#ddd" class="btn" onclick="displayProduct({name: 'CH 3D-X Dimension Architects', description: 'Transform your 3D modeling and design tasks with unparalleled precision and control, allowing you to sculpt and create with ease.', image: '3d_mice.png', price: 1999.00})">View</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="img"><img src="stylus_mouse.jpg" alt=""></div>
+                    <div class="desc">Product</div>
+                    <div class="title">Clicker Haven S2 Switchblade</div>
+                    <div class="box">
+                        <div class="price">₱2299.00</div>
+                        <a href="#stylus" class="btn" onclick="displayProduct({name: 'Clicker Haven S2 Switchblade', description: 'Combining the functionality of a mouse and stylus in one sleek device, ideal for designers and artists seeking versatility and efficiency.', image: 'stylus_mouse.jpg', price: 2299.00})">View</a>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </section>
+
+        <h2 class="pHeading">Accessories</h2>
+
+        <section class="sec">
+
+            <div class="products">
+
+                <div class="card">
+                    <div class="img"><img src="mouse_pad.jpg" alt=""></div>
+                    <div class="desc">Accessories</div>
+                    <div class="title">Clicker Haven Landing Zone LZ-4</div>
+                    <div class="box">
+                        <div class="price">₱599.00</div>
+                        <a href="#mouse_pad" class="btn" onclick="displayProduct({name: 'Clicker Haven Landing Zone LZ-4', description: 'Enhance your mouse’s precision with a smooth, durable surface that offers optimal control for both work and play.', image: 'mouse_pad.jpg', price: 599.00})">View</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="img"><img src="mouse_bungee.png" alt=""></div>
+                    <div class="desc">Accessories</div>
+                    <div class="title">CHaven Cable Cor wranglers </div>
+                    <div class="box">
+                        <div class="price">₱799.00</div>
+                        <a href="#mouse_bungee" class="btn" onclick="displayProduct({name: 'CHaven Cable Cor wranglers', description: 'Keep your desk organized and your cables tangle-free, ensuring uninterrupted gameplay or work sessions with ease.', image: 'mouse_bungee.png', price: 799.00})">View</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="img"><img src="mouse_grips.jpg" alt=""></div>
+                    <div class="desc">Accessories</div>
+                    <div class="title">CH Claw Champions - Pro Grip Edition</div>
+                    <div class="box">
+                        <div class="price">₱999.00</div>
+                        <a href="#mouse_grips" class="btn" onclick="displayProduct({name: 'CH Claw Champions - Pro Grip Edition', description: 'Gain a competitive edge with enhanced grip and control, perfect for intense gaming sessions or precision tasks.', image: 'mouse_grips.jpg', price: 999.00})">View</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="img"><img src="mouse_feet.jpg" alt=""></div>
+                    <div class="desc">Accessories</div>
+                    <div class="title">CH Glide Enhancers - Mongoose Upgrade</div>
+                    <div class="box">
+                        <div class="price">₱699.00</div>
+                        <a href="#mouse_feet" class="btn" onclick="displayProduct({name: 'CH Glide Enhancers - Mongoose Upgrade', description: 'Upgrade your mouse for lightning-fast movements and smooth gliding, enhancing performance for gamers and professionals alike.', image: 'mouse_feet.jpg', price: 699.00})">View</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="img"><img src="mouse_docks.jpg" alt=""></div>
+                    <div class="desc">Accessories</div>
+                    <div class="title">CH Power Havens - Infinity Station</div>
+                    <div class="box">
+                        <div class="price">₱1399.00</div>
+                        <a href="#mouse_docks" class="btn" onclick="displayProduct({name: 'CH Power Havens - Infinity Station', description: 'Charge and customize your mouse effortlessly, combining convenience with cutting-edge technology for an enhanced user experience.', image: 'mouse_docks.jpg', price: 1399.00})">View</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="img"><img src="mouse_carrying_cases.jpg" alt=""></div>
+                    <div class="desc">Accessories</div>
+                    <div class="title">CH Pocket Protectors - Guardian Series</div>
+                    <div class="box">
+                        <div class="price">₱799.00</div>
+                        <a href="#mouse_cases" class="btn" onclick="displayProduct({name: 'CH Pocket Protectors - Guardian Series', description: 'Ensure your mouse is safe and protected during travel with these durable and stylish carrying cases.', image: 'mouse_carrying_cases.jpg', price: 799.00})">View</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="img"><img src="mouse_cleaning_kit.jpg" alt=""></div>
+                    <div class="desc">Accessories</div>
+                    <div class="title">Clicker Haven Nano Refresh Carekit</div>
+                    <div class="box">
+                        <div class="price">₱499.00</div>
+                        <a href="#mouse_cases" class="btn" onclick="displayProduct({name: 'Clicker Haven Nano Refresh Carekit', description: 'Keep your mouse in top condition with our comprehensive cleaning kits, designed to maintain peak performance and extend its lifespan.', image: 'mouse_cleaning_kit.jpg', price:499.00})">View</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="img"><img src="mouse_wrist_rest.png" alt=""></div>
+                    <div class="desc">Accessories</div>
+                    <div class="title">CH Wrist Warriors - Ergonomic Throne</div>
+                    <div class="box">
+                        <div class="price">₱899.00</div>
+                        <a href="#mouse_cases" class="btn" onclick="displayProduct({name: 'CH Wrist Warriors - Ergonomic Throne', description: 'Maximize comfort and reduce strain during long work or gaming sessions with our ergonomically designed wrist rests.', image: 'mouse_wrist_rest.png', price:899.00})">View</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="img"><img src="mouse_skins.png" alt=""></div>
+                    <div class="desc">Accessories</div>
+                    <div class="title">CH Clicker Couture - Dragonfire Collection</div>
+                    <div class="box">
+                        <div class="price">₱599.00</div>
+                        <a href="#mouse_cases" class="btn" onclick="displayProduct({name: 'CH Clicker Couture - Dragonfire Collection', description: 'Customize your mouse with fiery, eye-catching designs, adding a personal touch while enhancing grip and protection.', image: 'mouse_skins.png', price:599.00})">View</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="product_cart" id="product_cart">
+            <div class="cart_container">
+                <div class="img_holder">
+                    <img class="product_img" id="product_img" src="" alt="Product Image">
+                </div>
+                <div class="product_display">
+                    <h1 id="product_name"></h1>
+                    <a id="close_toggle" href="#" onclick="toggle_remove()">
+                        <span class="fas fa-window-close"></span>
+                    </a>
+                    <hr>
+                    <br>
+                    <p class="desc_product">DESCRIPTION: </p>
+                    <p id="product_desc"></p><br>
+                    <div class="quantity">
+                        Quantity:
+                        <div class="qty">
+                            <button class="qty-btn" onclick="decreaseQuantity()">-</button>
+                            <input type="text" id="quantity" name="quantity" value="1" readonly>
+                            <button class="qty-btn" onclick="increaseQuantity()">+</button>
+                        </div>
+                    </div><br>
+                    <div class="label">Price: ₱<span id="price">".00"</span></div><br>
+                    <button class="btn_addtocart" onclick="buy_now()">Buy Now</button>
+                    <button class="btn_addtocart" onclick="add_to_cart()">Add to cart</button>
+                    
+                </div>
+            </div>
+        </section>
+
+        <div class="overlay"></div>
+
+        <section class="shopping_cart" id="shopping_cart">
+            <div class="order_container">
+
+                <a href="#" id="close_toggle" onclick="remove_cart()">
+                    <span class="fas fa-window-close"></span>
+                </a>
+
+                <h1 id="shop_title">Shopping Cart</h1>
+                <hr>
+                <table border = "0" id ="item_list"></table>
+                
+                   <p class="total_price"> Total: <span id="total_price"> 0.00 </span></p>
+        
+                <button id="check_out" onclick="go_to_next()">Check Out</button>
+            </div>
+        </section>
+
+        <div class="overlay"></div>
+        
+        <section class="place_order" id="place_order">
+            <div class="deliver_info">
+                <a href="#" onclick="back_to_cart()">
+                    <span class="fas fa-backward"></span>
+                </a>
+        
+                <div class="sub_title">
+                    <span class="fas fa-search-location"></span>
+                    <h1>Delivery Information</h1>
+                </div>
+        
+                <form>
+                    <table border="0">
+                        <tr>
+                            <td>Full Name:</td>
+                            <td class="input_center">
+                                <input type="text" id="full_name" name="full_name" value="" placeholder="Name" required/>
+                            </td>
+                        </tr>
+        
+                        <tr>
+                            <td>Mobile Number:</td>
+                            <td class="input_center">
+                                <input type="number" id="mobile_num" name="mobile_num" value="" placeholder="(+63) 907 032 4570" required/>
+                            </td>
+                        </tr>
+        
+                        <tr>
+                            <td>Address:</td>
+                            <td class="input_center">
+                                <textarea id="address" placeholder="Your full address" required></textarea>
+                            </td>
+                        </tr>
+        
+                        <tr>
+                            <td>
+                                <span class="fas fa-money-check"></span>
+                                Payment Option:
+                            </td>
+                            <td class="input_center">
+                                <select name="pay_method" id="pay_method" onchange="toggle_cardfields()">
+                                    <option value="Cash_on_Delivery">Cash on Delivery</option>
+                                    <option value="Card">Credit/Debit Card</option>
+                                </select><br>
+                            </td>
+                        </tr>
+        
+                        <tr id="name_on_card_row" style="display: none;">
+                            <td style="border: none;"></td>
+                            <td class="input_center" style="border: none;">
+                                <input type="text" id="name_on_card" name="name_on_card" value="" placeholder="Name on Card" required/>
+                            </td>
+                        </tr>
+        
+                        <tr id="card_num_row" style="display: none;">
+                            <td></td>
+                            <td class="input_center">
+                                <input type="number" id="card_num" name="card_num" value="" placeholder="Card Number" required/>
+                            </td>
+                        </tr>
+        
+                        <tr>
+                            <td colspan="2" class="input_center">
+                                <textarea placeholder="Other instructions..."></textarea>
+                            </td>
+                        </tr>
+                    </table>
+        
+                    <button type="reset" id="place_order" onclick="display_success()">Place Order</button>
+                </form>
+            </div>
+        </section>
+
+        <div class="overlay"></div>
+
+        <section class="display_success" id="display_success">
+            <div class="message">
+                <span class="fas fa-check-circle"></span>
+                <h1 id="shop_title">Thank you!!</h1>
+                <h2>Your order has been successfully placed.</h2>
+                
+                <button id="okay" onclick="successfully_ordered()">Okay</button>
+            </div>
+        </section>
+        
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-row">
+                    <div class="footer-col">
+                        <h4>Clicker Haven</h4>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Our Services</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Affiliate Program</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Get Help</h4>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Shipping</a></li>
+                            <li><a href="#">Returns</a></li>
+                            <li><a href="#">Order Status</a></li>
+                            <li><a href="#">Payment Options</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Contact Us</h4>
+                        <ul>
+                            <li>Email: support@clickerhaven.com</li>
+                            <li>Phone: (+63) 123-4567</li>
+                            <li>Address: 1234 Mouse St, Tech City, TX 75001</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Follow Us</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2024 Clicker Haven. All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+        
+
+    </body>
+
+</html>

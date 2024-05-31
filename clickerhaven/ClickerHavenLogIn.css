@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.background-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+#background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+}
+
+.content-wrapper {
+    width: 400px;
+    margin-left: 400px;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+.login-card {
+    text-align: center;
+}
+
+.login-tag {
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.form-items input[type="username"],
+.form-items input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.visible-password {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+
+.button-item {
+    background-color: rgb(18, 205, 18);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button-item:hover {
+    background-color: rgb(18, 205, 18);
+}
+
+.create-account-item {
+    margin-top: 15px;
+}
+
+.create-account-item a {
+    text-decoration: none;
+    color: rgb(18, 205, 18);
+}
+
+.create-account-item a:hover {
+    text-decoration: underline;
+}
+
+.clicker-haven {
+    position:fixed;
+    top: 300px;
+    left: 200px;
+}
+
+.clicker-haven label {
+    color: white;
+    font-size: 80px;
+    font-weight: bold;
+}
+
+.green-dot {
+    color: rgb(18, 205, 18);
+    font-size: 100px;
+}
